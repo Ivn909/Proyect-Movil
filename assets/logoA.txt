@@ -1,0 +1,2 @@
+Fuente: "Alata"
+Tamaño del lienzo: 520px
