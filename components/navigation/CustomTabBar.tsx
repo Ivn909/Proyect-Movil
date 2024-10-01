@@ -34,7 +34,6 @@ const CustomTabBar: React.FC = () => {
         <Text style={styles.label}>Asignaturas</Text>
       </TouchableOpacity>
 
-      {/* Botón de Cuenta */}
       <TouchableOpacity
         style={styles.tabButton}
         onPress={() => navigation.navigate("Account")}
@@ -48,6 +47,37 @@ const CustomTabBar: React.FC = () => {
           style={styles.icon}
         />
         <Text style={styles.label}>Cuenta</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.tabButton}
+        onPress={() => navigation.navigate("Account")}
+      >
+        <Image
+          source={
+            isAccountActive
+              ? require("../../assets/Guardados.png") // Icono activo
+              : require("../../assets/Guardados.png") // Icono inactivo
+          }
+          style={styles.icon}
+        />
+        <Text style={styles.label}>Guardados</Text>
+      </TouchableOpacity>
+
+      {/* Botón de Cuenta */}
+      <TouchableOpacity
+        style={styles.tabButton}
+        onPress={() => navigation.navigate("Account")}
+      >
+        <Image
+          source={
+            isAccountActive
+              ? require("../../assets/Menú.png") // Icono activo
+              : require("../../assets/Menú.png") // Icono inactivo
+          }
+          style={styles.icon}
+        />
+        <Text style={styles.label}>Menú</Text>
       </TouchableOpacity>
     </View>
   );

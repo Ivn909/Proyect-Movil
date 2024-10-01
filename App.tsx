@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as Font from "expo-font";
-import Inicio from "./components/Inicio";
-import Account from "./components/Account";
-import LogIn from "./components/LogIn";
-import SignUp from "./components/SignUp";
-import Courses from "./components/Courses";
+import Inicio from "./components/Screens/Inicio";
+import Account from "./components/Screens/Account";
+import LogIn from "./components/Screens/LogIn";
+import SignUp from "./components/Screens/SignUp";
+import Courses from "./components/Screens/Courses";
 
 const navegador = createStackNavigator();
 
